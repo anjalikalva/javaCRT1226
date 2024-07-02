@@ -1,0 +1,19 @@
+// substring(startindex) substring(startIndex,endIndex) example 
+import java.util.*;
+import java.lang.String;
+class Substring
+{
+public static void main(String[] args)
+{
+Scanner s=new Scanner(System.in);
+String str="Java is simple language";
+System.out.println(str.substring(6));
+System.out.println(str.substring(3,15));
+
+}
+}
+C:\crt java>javac Substring.java
+
+C:\crt java>java Substring
+s simple language
+a is simple
