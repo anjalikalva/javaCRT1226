@@ -1,0 +1,22 @@
+//split(str)example
+import java.util.*;
+import java.lang.String;
+class Split
+{
+public static void main(String[] args)
+{
+Scanner s=new Scanner(System.in);
+String str="Java is simple language";
+String res[]=str.split(" ");
+System.out.println(Arrays.toString(res));
+String res1[]=str.split("is");
+System.out.println(Arrays.toString(res1));
+
+}
+}
+
+C:\crt java>javac Split.java
+
+C:\crt java>java Split
+[Java, is, simple, language]
+[Java ,  simple language]
