@@ -1,0 +1,50 @@
+subarray of size k with given sum
+an array arr[] an integer k and a sum.the task is to check if their exist any subarray with k elements whose sum is equal to the given sum.if any of the subarray with size k has the sum equal to the given sum then print yes otherwise print no
+examples
+Ex:
+i/p:arr[]={1,4,2,10,2,3,1,0,20},k=4,sum=18
+output:yes
+
+import java.util.*;
+import java.lang.String;
+class Testsadd
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+int n=s.nextInt();
+int a[]=new int[n];
+int i;
+for(i=0;i<n;i++)
+{
+a[i]=s.nextInt();
+}
+int k=s.nextInt();
+int sum=s.nextInt();
+for(i=0;i<n-k;i++)
+{
+int res=0;
+for(int j=i;j<i+k;j++)
+{
+res=res+a[j];
+}
+if(res==sum)
+{
+System.out.println("yes");
+return;
+}
+}
+if(i==n-k+1)
+{
+System.out.println("no");
+}
+}
+}
+C:\crt java>javac Testsadd.java
+
+C:\crt java>java Testsadd
+9
+1 4 2 10 2 3 1 0 20
+4
+18
+yes
