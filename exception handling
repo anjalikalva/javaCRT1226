@@ -1,0 +1,38 @@
+import java.util.*;
+import java.lang.String;
+class Test5
+{
+public static void main(String[] args)
+{
+Scanner s=new Scanner(System.in);
+try
+{
+System.out.println("Java");
+int n=s.nextInt();
+System.out.println(10/n);
+int a[]={34,54,12};
+System.out.println(a[1]);
+}
+catch(ArithmeticException e)
+{
+System.out.println(e);
+}
+catch(ArrayIndexOutOfBoundsException e)
+{
+System.out.println(e);
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+System.out.println("End of the program");
+}
+}
+C:\crt java>javac Test5.java
+
+C:\crt java>java Test5
+Java
+2
+5
+54
+End of the program
