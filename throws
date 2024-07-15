@@ -1,0 +1,20 @@
+import java.util.*;
+import java.lang.String;
+class Throws
+{
+public static void main(String[] args)throws
+InterruptedException
+{
+System.out.println("Java");
+Thread.sleep(3000);
+System.out.println("Python");
+Thread.sleep(4000);
+System.out.println("HTML");
+}
+}
+C:\crt java>javac Throws.java
+
+C:\crt java>java Throws
+Java
+Python
+HTML
